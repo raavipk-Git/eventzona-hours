@@ -1,0 +1,88 @@
+{
+  "_README": "EVENT ZONA — Events Quote Rules Engine. Edit values here (on GitHub from your phone) and the /parties-events page updates live in ~2-5 min. Do NOT rebuild the website. Keep the JSON valid (quotes + commas). Prices below are PLACEHOLDERS — replace with real numbers. After GitHub setup, the live URL is raw.githubusercontent.com/raavipk-Git/<repo>/main/events-pricing.json and Claude wires the page to it.",
+  "promise": "We guarantee a quote response within 8 business hours when all required information is submitted.",
+  "email": "events.eventzona@gmail.com",
+  "formEndpoint": "",
+  "_formEndpoint_help": "Leave empty to use mailto (opens the customer's email app). Paste a Formspree endpoint (https://formspree.io/f/XXXX) to auto-email leads with no app needed.",
+  "disclaimer": "This is a starting estimate, not a final contract price. Your final quote is confirmed by our General Manager.",
+
+  "locations": [
+    { "id": "tupelo",   "name": "Tupelo — Event Zona (790 Moncrief Dr)", "tax": 0.07, "gm_email": "events.eventzona@gmail.com", "active": true },
+    { "id": "tupelo2",  "name": "Allin1 Tupelo — Adventures (625 Robert E Lee Dr)", "tax": 0.07, "gm_email": "events.eventzona@gmail.com", "active": true },
+    { "id": "columbus", "name": "Columbus (1207 Hwy 45 N)", "tax": 0.07, "gm_email": "events.eventzona@gmail.com", "active": true },
+    { "id": "meridian", "name": "Meridian (2014 Hwy 45 N, Ste 3)", "tax": 0.07, "gm_email": "events.eventzona@gmail.com", "active": true }
+  ],
+
+  "eventTypes": [
+    { "id": "birthday",  "name": "Birthday Party",        "minGuests": 8,  "gm": false },
+    { "id": "casual",    "name": "Casual Group Fun",       "minGuests": 6,  "gm": false },
+    { "id": "school",    "name": "School Event",           "minGuests": 15, "gm": true },
+    { "id": "church",    "name": "Church / Special Group",  "minGuests": 15, "gm": true },
+    { "id": "corporate", "name": "Corporate Event",        "minGuests": 10, "gm": true },
+    { "id": "team",      "name": "Team Building",          "minGuests": 10, "gm": true },
+    { "id": "special",   "name": "Special Event",          "minGuests": 10, "gm": true },
+    { "id": "buyout",    "name": "Private Buyout",         "minGuests": 1,  "gm": true }
+  ],
+
+  "activities": [
+    { "id": "bowling",    "name": "Bowling",              "priceType": "perPerson", "price": 12.99, "taxable": true, "waiver": false, "gm": false, "locations": ["tupelo","tupelo2","columbus","meridian"], "active": true },
+    { "id": "trampoline", "name": "Trampoline Jump",      "priceType": "perPerson", "price": 14.99, "taxable": true, "waiver": true,  "gm": false, "locations": ["tupelo","columbus","meridian"], "active": true },
+    { "id": "gokarts",    "name": "Go-Karts",             "priceType": "perPerson", "price": 10.99, "taxable": true, "waiver": true,  "gm": false, "locations": ["tupelo2"], "active": true },
+    { "id": "coaster",    "name": "Spinning Coaster",     "priceType": "perPerson", "price": 6.99,  "taxable": true, "waiver": false, "gm": false, "locations": ["tupelo"], "active": true },
+    { "id": "labamba",    "name": "LaBamba Ride",         "priceType": "perPerson", "price": 5.99,  "taxable": true, "waiver": false, "gm": false, "locations": ["tupelo"], "active": true },
+    { "id": "arcade",     "name": "Arcade Card",          "priceType": "perPerson", "price": 15.00, "taxable": true, "waiver": false, "gm": false, "locations": ["tupelo","tupelo2","columbus","meridian"], "active": true },
+    { "id": "room",       "name": "Private Room",         "priceType": "flat",      "price": 75.00, "taxable": false,"waiver": false, "gm": true,  "locations": ["tupelo","columbus","meridian"], "active": true },
+    { "id": "buyout",     "name": "Full Facility Buyout", "priceType": "custom",    "price": 0,     "taxable": true, "waiver": false, "gm": true,  "locations": ["tupelo","tupelo2","columbus","meridian"], "active": true }
+  ],
+
+  "food": [
+    { "id": "pizza",    "name": "Pizza Package",       "priceType": "perPerson", "price": 7.99,  "taxable": true, "gratuity": true,  "gm": false, "active": true },
+    { "id": "drinks",   "name": "Drink Package",       "priceType": "perPerson", "price": 2.99,  "taxable": true, "gratuity": true,  "gm": false, "active": true },
+    { "id": "snacks",   "name": "Snack Package",       "priceType": "perPerson", "price": 3.99,  "taxable": true, "gratuity": true,  "gm": false, "active": true },
+    { "id": "burger",   "name": "Burger Package",      "priceType": "perPerson", "price": 9.99,  "taxable": true, "gratuity": true,  "gm": false, "active": true },
+    { "id": "catering", "name": "Catering Option",     "priceType": "custom",    "price": 0,     "taxable": true, "gratuity": true,  "gm": true,  "active": true },
+    { "id": "beer",     "name": "Beer / Adult Drinks", "priceType": "perPerson", "price": 6.00,  "taxable": true, "gratuity": true,  "gm": true,  "active": true }
+  ],
+
+  "fees": [
+    { "id": "setup", "name": "Setup Fee", "type": "flat", "amount": 25, "active": true },
+    { "id": "event", "name": "Event Fee", "type": "flat", "amount": 0,  "active": false }
+  ],
+
+  "serviceFeePct": 0.0,
+  "gratuityPct": 0.18,
+  "_gratuity_help": "Gratuity is applied to food/drinks (and hosted/corporate events). Edit the percentage here.",
+
+  "discounts": {
+    "participantTiers": [
+      { "min": 15, "pct": 0.05 },
+      { "min": 30, "pct": 0.10 },
+      { "min": 50, "pct": 0.15 }
+    ],
+    "activityTiers": [
+      { "min": 2, "pct": 0.05 },
+      { "min": 3, "pct": 0.10 }
+    ],
+    "stack": true,
+    "maxPct": 0.25,
+    "note": "Estimated group savings shown on the quote are confirmed by the General Manager. The more participants and activities, the bigger the savings."
+  },
+
+  "changePolicy": {
+    "changeFee": 35,
+    "dateChangeFee": 50,
+    "headcountChangeFee": 0,
+    "depositForfeitDays": 7,
+    "policyText": "Changes to your date, time, headcount, or package after booking are subject to a change-over (Delta) fee so we can re-coordinate staff, room, and attractions. Cancellations within {depositForfeitDays} days forfeit the deposit. All change requests must be emailed to events.eventzona@gmail.com."
+  },
+
+  "gmTriggers": {
+    "estimateOver": 750,
+    "guestOver": 60,
+    "note": "GM approval is required for: private room or full buyout, discounts, school/group or church rates, corporate/team-building events, alcohol, custom packages, guest counts over the location threshold, estimates over the set dollar amount, peak-date conflicts, or any requested exception. POS staff do not negotiate — exceptions escalate to the GM."
+  },
+
+  "changeLog": [
+    { "date": "2026-06-21", "change": "Initial seed config created (placeholder prices).", "reason": "Build V1 quote engine.", "approvedBy": "owner", "effective": "2026-06-21" }
+  ]
+}
