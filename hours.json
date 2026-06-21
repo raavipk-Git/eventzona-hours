@@ -1,0 +1,5 @@
+{
+  "_howto": "Edit values, then Commit. on:true shows the bar on every page. level: warn=red, info=blue, good=green.",
+  "alert": { "on": false, "level": "warn", "msg": "" },
+  "special": { "tupelo": "", "tupelo2": "", "columbus": "", "meridian": "" }
+}
