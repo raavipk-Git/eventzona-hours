@@ -1,5 +1,69 @@
 {
-  "_howto": "Edit values, then Commit. on:true shows the bar on every page. level: warn=red, info=blue, good=green.",
-  "alert": { "on": false, "level": "warn", "msg": "" },
-  "special": { "tupelo": "", "tupelo2": "", "columbus": "", "meridian": "" }
+  "_howto": "Edit values, then Commit. alert.on:true shows the site-wide bar. special.<loc> is an optional per-location OVERRIDE for today (blank=normal). hours.<loc> holds the regular weekly hours the SMS bot answers from. Times are local Central. Use 'Closed' for closed days.",
+  "alert": {
+    "on": false,
+    "level": "warn",
+    "msg": ""
+  },
+  "special": {
+    "tupelo": "",
+    "tupelo2": "",
+    "columbus": "",
+    "meridian": ""
+  },
+  "hours": {
+    "tupelo": {
+      "name": "Tupelo - Event Zona Bowl (790 Moncrief Dr)",
+      "sms_number": "662-584-4425",
+      "mon": "11:00 AM - 10:00 PM",
+      "tue": "11:00 AM - 10:00 PM",
+      "wed": "11:00 AM - 10:00 PM",
+      "thu": "11:00 AM - 10:00 PM",
+      "fri": "11:00 AM - 12:00 AM",
+      "sat": "11:00 AM - 12:00 AM",
+      "sun": "12:00 PM - 9:00 PM"
+    },
+    "tupelo_gokarts": {
+      "name": "Tupelo Go-Karts - ALLIN1 Adventures (625 Robert E Lee Dr)",
+      "sms_number": "662-322-0715",
+      "mon": "Closed",
+      "tue": "Closed",
+      "wed": "Closed",
+      "thu": "Closed",
+      "fri": "4:00 PM - 11:00 PM",
+      "sat": "12:00 PM - 11:00 PM",
+      "sun": "Closed"
+    },
+    "columbus": {
+      "name": "Columbus (1207 Hwy 45 N)",
+      "sms_number": "662-729-9302",
+      "mon": "12:00 PM - 10:00 PM",
+      "tue": "12:00 PM - 10:00 PM",
+      "wed": "12:00 PM - 5:00 PM",
+      "thu": "12:00 PM - 10:00 PM",
+      "fri": "12:00 PM - 11:00 PM",
+      "sat": "11:00 AM - 11:00 PM",
+      "sun": "1:00 PM - 9:00 PM"
+    },
+    "meridian": {
+      "name": "Meridian (2014 Hwy 45 N) - SUMMER hours through Aug 5, 2026",
+      "sms_number": "601-685-3762",
+      "mon": "12:00 PM - 10:00 PM",
+      "tue": "12:00 PM - 10:00 PM",
+      "wed": "12:00 PM - 10:00 PM",
+      "thu": "12:00 PM - 10:00 PM",
+      "fri": "12:00 PM - 11:00 PM",
+      "sat": "12:00 PM - 11:00 PM",
+      "sun": "2:00 PM - 9:00 PM",
+      "_regular_after_aug5_2026": {
+        "mon": "4:00 PM - 10:00 PM",
+        "tue": "4:00 PM - 10:00 PM",
+        "wed": "Closed",
+        "thu": "4:00 PM - 10:00 PM",
+        "fri": "4:00 PM - 11:00 PM",
+        "sat": "11:00 AM - 11:00 PM",
+        "sun": "2:00 PM - 9:00 PM"
+      }
+    }
+  }
 }
