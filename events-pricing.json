@@ -25,7 +25,7 @@
   ],
 
   "activities": [
-    { "id": "bowling",    "name": "Bowling",              "priceType": "perPerson", "price": 12.99, "taxable": true, "waiver": false, "gm": false, "locations": ["tupelo","tupelo2","columbus","meridian"], "active": true },
+    { "id": "bowling",    "name": "Bowling",              "priceType": "perPerson", "price": 5, "taxable": true, "waiver": false, "gm": false, "locations": ["tupelo","tupelo2","columbus","meridian"], "active": true },
     { "id": "trampoline", "name": "Trampoline Jump",      "priceType": "perPerson", "price": 14.99, "taxable": true, "waiver": true,  "gm": false, "locations": ["tupelo","columbus","meridian"], "active": true },
     { "id": "gokarts",    "name": "Go-Karts",             "priceType": "perPerson", "price": 10.99, "taxable": true, "waiver": true,  "gm": false, "locations": ["tupelo2"], "active": true },
     { "id": "coaster",    "name": "Spinning Coaster",     "priceType": "perPerson", "price": 6.99,  "taxable": true, "waiver": false, "gm": false, "locations": ["tupelo"], "active": true },
