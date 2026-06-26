@@ -1,9 +1,9 @@
 {
   "_howto": "Edit values, then Commit. alert.on:true shows the site-wide bar. special.<loc> is an optional per-location OVERRIDE for today (blank=normal). hours.<loc> holds the regular weekly hours the SMS bot answers from. Times are local Central. Use 'Closed' for closed days.",
   "alert": {
-    "on": false,
-    "level": "warn",
-    "msg": ""
+    "on": true,
+    "level": "good",
+    "msg": "Happy 4th of July! All Event Zona locations close early at 6 PM on Saturday, July 4th."
   },
   "special": {
     "tupelo": "",
